@@ -1,0 +1,3 @@
+Download migrate - https://github.com/golang-migrate/migrate/releases
+Create new migration - migrate create -seq -ext=.sql -dir=./migrations create_movies_table
+migrate -  migrate -path="./migrations" -database="$GREENLIGHT_DB_DSN" up
